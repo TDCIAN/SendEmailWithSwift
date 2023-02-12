@@ -105,20 +105,3 @@ extension ViewController: MFMailComposeViewControllerDelegate {
         }
     }
 }
-
-// Use PreviewProvider
-struct ViewController_Previews: PreviewProvider {
-    static var previews: some View {
-        Container().edgesIgnoringSafeArea(.all)
-    }
-    
-    struct Container: UIViewControllerRepresentable {
-        func makeUIViewController(context: Context) -> UIViewController {
-            return ViewController()
-        }
-        
-        func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
-            
-        }
-    }
-}
